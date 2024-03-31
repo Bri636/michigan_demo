@@ -169,7 +169,7 @@ class ActionAgent(LabWorker):
 if __name__=="__main__": 
 
     my_model = 'Gemini'
-    api_key = "AIzaSyCtvs53zl1UNruJvPtKQQFenUnWfhVXgRY"
+    api_key = None
 
     if my_model=='Gemini':
         llm = GoogleGenerativeAI(model="gemini-pro",
