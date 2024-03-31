@@ -1,0 +1,4 @@
+1.) Start by loading the tip rack onto slot 2 of the Opentrons robot. Use 'geb_96_tiprack_1000ul' labware for the tip rack.
+2.) Load a plate of type 'armadillo_96_wellplate_200ul_pcr_full_skirt' onto slot 3.
+3.) Load a pipette of type 'p1000_single'. Load it as a left mount. Use the tipracks from geb_96_tiprack_1000ul as the tiprack.
+4.) Use the pipette that you have just loaded to pick up a tip

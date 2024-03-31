@@ -1,0 +1,13 @@
+### Code:
+from opentrons import protocol_api
+
+def run(protocol: protocol_api.ProtocolContext):
+    tiprack = protocol.load_labware(load_name = 'opentrons_96_filtertiprack_200ul', location = 2)
+    plate = protocol.load_labware(load_name = 'corning_12_wellplate_6.9ml_flat', location = 3)
+    pipette = protocol.load_instrument(instrument_name = 'p1000_single_gen2', mount='left')
+
+### Protocol Directions:
+1.) Start by loading the tip rack onto slot 2 of the Opentrons robot. Use 'geb_96_tiprack_1000ul' labware for the tip rack.
+2.) Load a plate of type 'armadillo_96_wellplate_200ul_pcr_full_skirt' onto slot 3. 
+3.) Load a pipette of type 'p1000_single'. Load it as a left mount. Use the tipracks from geb_96_tiprack_1000ul as the tiprack.
+4.) Use the pipette that you have just loaded to pick up a tip
