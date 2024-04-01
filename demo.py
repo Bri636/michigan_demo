@@ -63,9 +63,6 @@ class LabWorker():
         agent.init_chain(templates)
         return agent
 
-    # def generate(self, input:str) -> str:
-    #     return self.chain.run({'user_input':input})
-
     def init_chain(self, templates:dataclass) -> None:
         """Initialized LLMChain based on agent_type [action, critic]"""
         system_prompt = SystemMessagePromptTemplate.from_template(templates.system)
@@ -162,7 +159,6 @@ class ActionAgent(LabWorker):
           message = f"Your code fixed itself in {i} tries:\n{result.stdout}"
       else:
           message = f"Your code failed to fix itself in {i} times:\n{result.stderr}"
-        #   raise ValueError("Candidate script failed after {num_retries} attempts. Script: {cand_script_path}")
       return code, message
     
 

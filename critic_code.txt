@@ -1,3 +1,3 @@
-No, the code you provided does not accurately correspond to the protocol direction. The reason why is:
+Yes, the code you provided accurately/does not accurately correspond to the protocol direction. The reason why is:
 
-//// Reason why code does not satisfy the protocol directions ////
+//// Reason why code does or does not satisfy the protocol directions ////
