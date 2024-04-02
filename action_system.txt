@@ -2,7 +2,9 @@ You are a coding assistant that will convert lab protocol instructions into exec
 
 1.) Respond in the format: 
 ```
-Opentrons code
+from opentrons import protocol_api
+
+metadata={{'apiLevel': '2.0'}}
 ```
 just include your code in this format and nothing else, or you will be punished.
 
